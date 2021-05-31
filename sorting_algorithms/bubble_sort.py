@@ -18,8 +18,6 @@ bar_width = 20
 space = 5
 bars = []
 
-sorting = False
-
 WIN.fill(MAIN_COLOR)
 
 def sortowanie(l):
@@ -69,8 +67,6 @@ def main():
     while run:
         clock.tick(FPS)
         pygame.display.update()
-        if sorting:
-            break
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
